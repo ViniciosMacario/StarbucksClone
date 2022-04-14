@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+html,body{
+    height: 100%; /*Estamos dizendo que o tamanho máximo da Janela é a Janela em si, não pode ter conteúdo para baixo, não vai exister scroll bar*/
+    overflow-y: hidden; /* hidden- O estouro é cortado e o restante do conteúdo ficará invisível*/
+    overflow-x: hidden;
+}
+
+.center{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+header{
+    height: 200px;
+    padding: 20px 0px;
+}
+.logo{
+    width: 50%;
+}
+
+.menu{
+    width: 50%;
+    padding-top: 30px;
+    text-align: right;
+}
+
+.menu a{
+    margin-right: 25px;
+    text-decoration: none;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: black;
+}
+
+section .sobre{
+    height: calc(100% - 200px);
+    position: relative;
+}
+
+.extras{
+    width: 1200px;
+    height: 1200px;
+    position:absolute;
+    bottom: -450px;
+    right: -500px;
+    border-radius: 50%;
+    background-color: #017143;
+}
+
+.social-media{
+    position: absolute;
+    right: 510px;
+    top: 220px;
+}
+
+.social-media img{
+    display: block;
+    margin-top: 30px;
+}
+
+.texto-sobre{
+    margin-top: 100px;
+}
+
+.texto-sobre h1{
+    font-size: 4em;
+}
+
+.texto-sobre p{
+    margin: 20px 0px;
+    max-width: 800px;
+    font-size: 1.2em;
+    color: black;
+    font-weight: bold;
+}
+
+.texto-sobre button{
+    width: 150px;
+    height: 40px;
+    border: 0;
+    font-size: 1.2em;
+    color: white;
+    cursor: pointer;
+    border-radius: 20px;
+    background-color: #017143;
+}
+
+.coffe-center{
+    display: block;
+    position: relative;
+    bottom: -230px;
+    margin: 0 auto;
+    max-width: 500px;
+    text-align: center;
+}
+
+.coffe-center img{
+    margin: 5px 15px;
+    cursor: pointer;
+
+}
